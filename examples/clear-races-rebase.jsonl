@@ -1,0 +1,14 @@
+{"at":0,"kind":"image","record":{"image":"gold","rev":1,"size":3,"blocks":{"0":"old","1":"same","2":"saved"}}}
+{"at":0,"kind":"image","record":{"image":"gold","rev":2,"size":3,"blocks":{"0":"NEW","1":"same","2":"changed"}}}
+{"at":1,"kind":"clone","record":{"volume":"work","image":"gold","rev":1}}
+{"at":2,"kind":"read","record":{"volume":"work","block":2,"reader":"backup"}}
+{"at":3,"kind":"rebase","record":{"id":"move","volume":"work","image":"gold","rev":2,"budget":2}}
+{"at":4,"kind":"material","record":{"id":"move","block":0,"text":"old"}}
+{"at":5,"kind":"write","record":{"volume":"work","block":0,"text":null,"request":"erase"}}
+{"at":6,"kind":"material","record":{"id":"move","block":2,"text":"saved"}}
+{"at":7,"kind":"restart","record":{}}
+{"at":8,"kind":"cutover","record":{"id":"move"}}
+{"at":9,"kind":"read","record":{"volume":"work","block":0,"reader":"after"}}
+{"at":10,"kind":"reclaim","record":{"image":"gold","rev":1}}
+{"at":11,"kind":"close","record":{"reader":"backup"}}
+{"at":12,"kind":"reclaim","record":{"image":"gold","rev":1}}

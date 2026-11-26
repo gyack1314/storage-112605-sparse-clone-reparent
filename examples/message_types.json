@@ -1,0 +1,14 @@
+[
+  "clone",
+  "close",
+  "cutover",
+  "fault",
+  "image",
+  "inspect",
+  "material",
+  "read",
+  "rebase",
+  "reclaim",
+  "restart",
+  "write"
+]

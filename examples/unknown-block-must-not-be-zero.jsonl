@@ -1,0 +1,8 @@
+{"at":0,"kind":"image","record":{"image":"gold","rev":1,"size":2,"blocks":{"0":"old","1":"same"}}}
+{"at":0,"kind":"image","record":{"image":"gold","rev":2,"size":2,"blocks":{"1":"same"}}}
+{"at":1,"kind":"clone","record":{"volume":"work","image":"gold","rev":1}}
+{"at":2,"kind":"fault","record":{"image":"gold","rev":1,"block":0}}
+{"at":3,"kind":"rebase","record":{"id":"r","volume":"work","image":"gold","rev":2,"budget":1}}
+{"at":4,"kind":"cutover","record":{"id":"r"}}
+{"at":5,"kind":"read","record":{"volume":"work","block":0,"reader":"check"}}
+{"at":6,"kind":"inspect","record":{"volume":"work"}}
